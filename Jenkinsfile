@@ -6,7 +6,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/tspatel02/java-devops-lab.git'
+                git branch: 'main', url: 'https://github.com/tspatel02/java-devops-lab.git'
             }
         }
 
