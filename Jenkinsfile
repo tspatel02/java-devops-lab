@@ -34,14 +34,14 @@ pipeline {
             }
         }
 
-    }
+     
 
      stage('Generate Site Report') {
             steps {
                 bat 'mvn site'
             }
         }
-
+    }
     post {
 
         always {
